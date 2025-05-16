@@ -69,4 +69,18 @@ body {
     
   }
   
+  .price {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px;
+    font-size: 1rem;
+    color: #9fe870;
+    word-break: break-word;
+    text-align: center;
+  }
+  
+  .amount {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+  }
   
