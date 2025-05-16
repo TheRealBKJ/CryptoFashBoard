@@ -30,8 +30,12 @@ async function fetchCryptoPrices() {
                 card.className = 'card'; // add class to card so i can make css easier
                 card.innerHTML = `
                     <h2>${symbol}</h2>
-                    <p>${currency}-${price.toLocaleString(undefined, {maximumFractionDigits: 6})}</p>
-                `;
+                    <div class="price">
+                        <span class="label">${selectedCurrency}:</span>
+                        <span class="amount">${price.toLocaleString(undefined, { maximumFractionDigits: 6 })}</span>
+                    </div>
+                    `;
+
                 grid.appendChild(card); // append to the grid
             }); 
         } else {
