@@ -6,8 +6,20 @@
     <title>Crypto Pricing DashBoard</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-    <h1> Crypto Pricing DashBoard</h1>
+    <div class = "dashboard">
+        <h1> Crypto Pricing DashBoard</h1>
+        <label for = "currency">Select a Currency:</label>
+        <select id="currency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="GBP">GBP</option>
+            <option value="JPY">JPY</option>
+            <option value="AUD">AUD</option>
+        </select>
+        <div class="grid"id = "CryptoPrices"></div>
+    </div>
+    <script src= "script.js"></script>
 </body>
+
 </html>
